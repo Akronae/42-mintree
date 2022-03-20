@@ -112,7 +112,8 @@ const themes =
 
     get auto ()
     {
-        const isDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches
+        //const isDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches
+        var isDarkMode = true
         var theme = isDarkMode ? this.twilight : this.blueberry
         theme = JSON.parse(JSON.stringify(theme))
         theme.name = 'auto'

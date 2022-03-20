@@ -16,6 +16,10 @@ export default
                         <h1 id='title'>Mintree</h1>
                         <h2 id='subtitle'>Mint a tree, act for the planet</h2>
                         <Button text='Mint me a tree!' size='large' on-click={this.mintTreeClicked} />
+                        <Button class='read-whitepaper' text='Read our whitepaper' type='text' on-click={this.mintTreeClicked}
+                            on-click={() => window.open('https://mintreee.gitbook.io/starting/', '_blank').focus()  } />
+                        <Button class='twitter' text='Follow us on Twitter' type='text' on-click={this.mintTreeClicked}
+                            on-click={() => window.open('https://twitter.com/minTREE16', '_blank').focus()  } />
                     </div>
                 </div>
             </div>
@@ -81,25 +85,33 @@ export default
             flex-direction: column;
             align-items: center;
 
-            #title, #subtitle
-            {
-                text-shadow: 6px 3px 13px black;
-            }
-
             #title
             {
                 font-size: 120px;
-                color: white
+                color: white;
+                text-shadow: 6px 3px 13px black;
             }
             #subtitle
             {
                 font-size: 40px;
                 color: #e3e3e3;
+                text-shadow: 6px 3px 3px rgba(0, 0, 0, 0.89);
             }
 
             .button
             {
                 margin-top: 130px;
+
+                &.read-whitepaper
+                {
+                    margin-top: 30px;
+                    color: white
+                }
+                &.twitter
+                {
+                    margin-top: 10px;
+                    color:white;
+                }
             }
         }
     }

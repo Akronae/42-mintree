@@ -14,7 +14,7 @@
     "lint": "eslint --ext .js,.vue src --fix"
   },
   "dependencies": {
-    "axios": "^0.19.0",
+    "axios": "^0.19.2",
     "babylonjs": "^4.2.2",
     "emailjs-com": "^2.4.1",
     "url-join": "^4.0.1",
