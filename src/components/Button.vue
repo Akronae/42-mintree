@@ -138,6 +138,12 @@ export default
     border-radius: 4px;
     transition: all .10s ease-out;
     fill: var(--theme-text-color-light);
+    .OnDesktop({
+        font-size: 1.7vh;
+    });
+    .OnLarge({
+        font-size: 1.5vh;
+    });
 
     &.size-normal
     {
@@ -153,7 +159,15 @@ export default
     }
     &.size-small
     {
-        padding: 7px;
+        padding: 15px 
+    }
+    &.size-large
+    {
+        padding: 15px 30px;
+        font-size: 40px;
+        font-weight: bold;
+        border-radius: 10px;
+        box-shadow: 0 2px 12px 1px #0000007d;
     }
 
     &.primary-type
@@ -368,16 +382,10 @@ export default
     .button-text
     {
         color: inherit;
+        font-size: inherit;
         text-shadow: inherit;
         margin-top: auto;
         margin-bottom: auto;
-
-        .OnDesktop({
-            font-size: 1.7vh;
-        });
-        .OnLarge({
-            font-size: 1.5vh;
-        });
     }
 
     .icon
